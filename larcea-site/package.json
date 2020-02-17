@@ -1,16 +1,20 @@
 {
   "name": "larcea-site",
-  "version": "1.0.0",
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
+  "version": "0.0.0",
+  "description": "A tool provided to help developpers find hackers",
+  "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/tsc -p tsconfig.json",
+    "start-prod": "node dest/server.js",
+    "start": "./node_modules/.bin/ts-node src/server.ts",
+    "dev": "./node_modules/.bin/nodemon "
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Speedphoenix/Larcea.git"
   },
-  "author": "",
+  "author": "Speedphoenix",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Speedphoenix/Larcea/issues"

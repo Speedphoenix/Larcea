@@ -1,6 +1,16 @@
 import express = require('express');
 import bodyparser = require('body-parser');
 import cors = require('cors');
+import { Sequelize } from 'sequelize';
+
+const sequelize =  new Sequelize({
+  database: process.env.PGDBNAME || 'larcea',
+  dialect: 'postgres',
+  username: 'sqlite',
+  password: process.env.PGPASSWORD || '12345montagneazertyatleastIhaveVodka',
+  host: process.env.PGHOST || 'localhost',
+});
+
 
 const app = express();
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class App extends Component {
-  constructor(props) {
+ /* constructor(props) {
     super(props);
     this.state = { response: "" };
   }
@@ -12,9 +12,10 @@ class App extends Component {
       .then(res => this.setState({ response: res }))
       .catch(err => err);
   }
-
+*/
   componentDidMount() {
-    this.callAPI();
+    //this.callAPI();
+    this.props.callAPI()
   }
 
   render() {
@@ -22,7 +23,7 @@ class App extends Component {
       <div>
         <h1>Larcea</h1>
         <p>
-          { this.state.response }
+          { this.props.response }
         </p>
       </div>
     );

@@ -2,7 +2,7 @@
   "name": "larcea-mirroring",
   "version": "0.0.0",
   "description": "A tool provided to help developpers find hackers",
-  "main": "src/index.ts",
+  "main": "src/server.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./node_modules/.bin/tsc -p tsconfig.json",
@@ -25,7 +25,11 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-session": "^1.17.0",
-    "passport": "^0.4.1"
+    "passport": "^0.4.1",
+    "pg": "^7.18.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.4",
+    "sequelize-typescript": "^1.1.0"
   },
   "devDependencies": {
     "@types/chai": "^4.2.9",

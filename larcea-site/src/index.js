@@ -8,6 +8,10 @@ import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 import * as serviceWorker from './serviceWorker';
 
+//Matherial UI theme
+import {theme} from "./theme/theme";
+import {MuiThemeProvider} from "@material-ui/core";
+
 //Redux imports
 
 import {Provider} from "react-redux";
@@ -31,3 +35,10 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+//did not work well
+/*
+<MuiThemeProvider theme={theme}>
+    <AppContainer/>
+</MuiThemeProvider>
+*/

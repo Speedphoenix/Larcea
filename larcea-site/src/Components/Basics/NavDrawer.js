@@ -4,6 +4,7 @@
 import React, {Component} from 'react';
 import Drawer from "@material-ui/core/Drawer";
 import Box from "@material-ui/core/Box";
+import LogSignIn from "../LogSignIn/LogSignIn";
 
 class NavDrawer extends Component {
     render() {
@@ -16,11 +17,7 @@ class NavDrawer extends Component {
                 >
                     <div>
                         <Box m={4}>
-                            <ul>
-                                <li>Option 1</li>
-                                <li>Option 2</li>
-                                <li>Option 3 etc...</li>
-                            </ul>
+                            <LogSignIn/>
                         </Box>
                     </div>
                 </Drawer>

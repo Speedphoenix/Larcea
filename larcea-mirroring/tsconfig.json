@@ -14,7 +14,7 @@
     /* Advanced Options */
     "forceConsistentCasingInFileNames": true,  /* Disallow inconsistently-cased references to the same file. */
 
-    "experimentalDecorators": true,
+    "experimentalDecorators": true, /* needed for sequelize-typescript */
     "emitDecoratorMetadata": true,
 
     "outDir": "./dest",

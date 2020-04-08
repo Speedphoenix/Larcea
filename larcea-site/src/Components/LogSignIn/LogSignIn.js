@@ -1,3 +1,5 @@
+//source: https://gist.github.com/EduardoSaverin/04d7d9529dfaf8cc9a404bb458bb8dbb
+
 import React from 'react';
 import { Paper, withStyles, Grid, TextField, Button, FormControlLabel, Checkbox } from '@material-ui/core';
 import { Face, Fingerprint } from '@material-ui/icons'
@@ -29,23 +31,16 @@ class LogSignIn extends React.Component {
                             <Fingerprint />
                         </Grid>
                         <Grid item md={true} sm={true} xs={true}>
-                            <TextField id="username" label="Password" type="password" fullWidth required />
+                            <TextField id="pwd" label="Password" type="password" fullWidth required />
                         </Grid>
                     </Grid>
-                    <Grid container alignItems="center" justify="space-between">
+                    <Grid container justify="center" style={{ marginTop: '10px' }} justify="space-between">
                         <Grid item>
-                            <FormControlLabel control={
-                                <Checkbox
-                                    color="primary"
-                                />
-                            } label="Remember me" />
+                            <Button variant="outlined" color="primary" style={{ textTransform: "none" }}>Login</Button>
                         </Grid>
                         <Grid item>
-                            <Button disableFocusRipple disableRipple style={{ textTransform: "none" }} variant="text" color="primary">Forgot password ?</Button>
+                            <Button variant="outlined" color="primary" style={{ textTransform: "none" }}>Sign In</Button>
                         </Grid>
-                    </Grid>
-                    <Grid container justify="center" style={{ marginTop: '10px' }}>
-                        <Button variant="outlined" color="primary" style={{ textTransform: "none" }}>Login</Button>
                     </Grid>
                 </div>
             </Paper>

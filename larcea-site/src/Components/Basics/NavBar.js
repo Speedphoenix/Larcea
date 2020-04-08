@@ -12,6 +12,8 @@ import {Typography} from "@material-ui/core";
 import {Button} from "@material-ui/core";
 import Box from "@material-ui/core/Box";
 
+import MenuOpenIcon from '@material-ui/icons/MenuOpen';
+
 class NavBar extends Component {
     render() {
         return (
@@ -23,15 +25,12 @@ class NavBar extends Component {
                             aria-label="Menu"
                             onClick={() => this.props.toggleDrawer(true)}
                         >
-                            MenuIcon
+                            <MenuOpenIcon/>
                         </IconButton>
                         <Box ml={4}>
                             <Typography variant="h6" color="inherit">
                                 Larcea
                             </Typography>
-                        </Box>
-                        <Box ml={4}>
-                            <Button color="inherit">Login</Button>
                         </Box>
                     </Toolbar>
                 </AppBar>

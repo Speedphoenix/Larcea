@@ -11,6 +11,7 @@ import IconButton from "@material-ui/core/IconButton";
 import {Typography} from "@material-ui/core";
 import {Button} from "@material-ui/core";
 import Box from "@material-ui/core/Box";
+import { Link } from 'react-router-dom';
 
 import MenuOpenIcon from '@material-ui/icons/MenuOpen';
 
@@ -28,9 +29,11 @@ class NavBar extends Component {
                             <MenuOpenIcon/>
                         </IconButton>
                         <Box ml={4}>
-                            <Typography variant="h6" color="inherit">
-                                Larcea
-                            </Typography>
+                            <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit' }}>
+                                <Typography variant="h6" color="inherit">
+                                    Larcea
+                                </Typography>
+                            </Link>
                         </Box>
                     </Toolbar>
                 </AppBar>

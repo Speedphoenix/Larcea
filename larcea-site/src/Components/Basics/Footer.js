@@ -27,7 +27,7 @@ function Footer(props) {
     const { classes } = props;
 
     return (
-        <footer className={classes.footer}>
+        <footer className={classes.footer} style={{ textAlign: 'center' }}>
             <Paper className={classes.root} elevation={1}>
                 <Typography variant="h5" component="h3">
                     ECE PPE Larcea Project
